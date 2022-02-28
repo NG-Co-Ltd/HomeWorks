@@ -4,11 +4,40 @@
 
 System.Console.Write("Enter the number: ");
 int number = Convert.ToInt32(Console.ReadLine());
+WriteNumbers(number);
 
-for (int i = 1; i <= number; i++)
+
+
+void WriteNumbers(int number)
 {
-    if(i %2 == 0)
+    if (number % 2 == 0)
     {
-        System.Console.Write(i + ", ");
+        for (int i = 1; i <= number; i++)
+        {   
+            if (i == number)
+            {
+                System.Console.Write(i);
+                break;
+            }
+            if (i % 2 == 0)
+            {
+                System.Console.Write(i + ", ");
+            }
+        }
+    }
+    else
+    {
+        for (int i = 1; i <= number; i++)
+        {
+            if (i == number - 1)
+            {
+                System.Console.Write(i);
+                break;
+            }
+            if (i % 2 == 0)
+            {
+                System.Console.Write(i + ", ");
+            }
+        }
     }
 }
