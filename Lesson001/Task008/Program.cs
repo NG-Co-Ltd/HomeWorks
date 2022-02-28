@@ -10,34 +10,16 @@ WriteNumbers(number);
 
 void WriteNumbers(int number)
 {
-    if (number % 2 == 0)
+    for (int i = 1; i <= number; i++)
     {
-        for (int i = 1; i <= number; i++)
-        {   
-            if (i == number)
-            {
-                System.Console.Write(i);
-                break;
-            }
-            if (i % 2 == 0)
-            {
-                System.Console.Write(i + ", ");
-            }
-        }
-    }
-    else
-    {
-        for (int i = 1; i <= number; i++)
+        if (i == number)
         {
-            if (i == number - 1)
-            {
-                System.Console.Write(i);
-                break;
-            }
-            if (i % 2 == 0)
-            {
-                System.Console.Write(i + ", ");
-            }
+            System.Console.Write(i);
+            break;
+        }
+        if (i % 2 == 0)
+        {
+            System.Console.Write(i + ", ");
         }
     }
 }
