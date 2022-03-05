@@ -3,6 +3,7 @@ SortMinMax(numbers);
 
 static void SortMinMax(int[] numbers)
 {
+    PrintArray(numbers);
     int minNumber, minNumberIndex,
         maxNumber, maxNumberIndex;
 
@@ -46,4 +47,5 @@ static void PrintArray(int[] numbers)
     {
         System.Console.Write(numbers[i] + " ");
     }
+    System.Console.WriteLine();
 }
